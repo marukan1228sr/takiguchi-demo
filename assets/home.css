@@ -160,3 +160,25 @@ body.tfg-page,.tfg-site{background:#fffaf0}.tfg-site{line-height:1.95}.tfg-site 
 @media(max-width:780px){.tfg-sale-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tfg-checkout{padding:0 16px;margin-top:26px}.tfg-check-panel{padding:22px 18px}.tfg-input-grid{grid-template-columns:1fr}.tfg-order-line{gap:12px}.tfg-order-line b{font-size:15px}.tfg-qty input{width:64px}.tfg-product-specs dl>div{grid-template-columns:1fr;gap:8px}.tfg-grand-total{font-size:18px}.tfg-faq summary{font-size:16px}.tfg-sale-item{padding:20px 12px}}
 /* Combined photo + selling status cards */
 .tfg-card h3>[data-product-title]{display:inline;font:inherit}.tfg-unified-fruits{padding-top:70px}.tfg-unified-fruits .tfg-card>p.tfg-stock-badge{font-size:13px;padding:6px 16px}.tfg-unified-fruits .tfg-card>p.tfg-stock-open{background:#e6efd9;color:#365a3e}@media(max-width:700px){.tfg-unified-fruits{padding-top:52px}}
+
+/* Responsive fruit calendar: show the full season on small screens. */
+@media(max-width:700px){
+ .tfg-calendar-scroll{overflow:visible;border-radius:20px;min-width:0}
+ .tfg-calendar{min-width:0;width:100%;box-sizing:border-box;padding:18px 12px}
+ .tfg-calendar-header{display:block}
+ .tfg-calendar-header>span{display:block;padding:0 0 12px;font-size:13px}
+ .tfg-months{padding:8px 0;gap:0}
+ .tfg-months b{font-size:11px;min-width:0}
+ .tfg-season-row{display:block;min-height:0;padding:18px 0}
+ .tfg-season-label{grid-template-columns:38px minmax(0,1fr);padding-right:0;gap:0 8px}
+ .tfg-season-label strong{font-size:15px}
+ .tfg-season-label small{font-size:12px}
+ .tfg-season-track{height:48px;margin-top:10px;min-width:0}
+ .tfg-season-range{min-width:0;max-width:100%}
+ .tfg-range-date{display:none}
+ .tfg-season-band,.tfg-range-grape .tfg-season-band{min-height:24px;height:24px;padding:0;gap:0;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 50%,calc(100% - 6px) 100%,6px 100%,0 50%)}
+ .tfg-season-band b,.tfg-season-band .tfg-fruit-icon{display:none}
+ .tfg-calendar-hint{display:none}
+ .tfg-season-section .tfg-heading h2{font-size:clamp(21px,6vw,30px);overflow-wrap:anywhere}
+ .tfg-season-section .tfg-heading{margin-bottom:26px}
+}
